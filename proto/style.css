@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#container {
+    display: none;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+.top h1{
+    font-size: 100px;
+}
+
+video {
+    width: 100vmax;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: red;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 5px 4px rgba(200, 0, 0, 0.8);
+}
+
+#startButton:hover {
+    background: forestgreen;
+    color: #000;
+    box-shadow: 4px 5px 4px rgba(0, 200, 0, 0.8);
+}
+
+header {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header span {
+    font-weight: 800;
+    font-size: 4rem;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    bottom: 2%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.7;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description p {
+    text-align: justify;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.repo i {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+.repo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.repo i:hover {
+    background: #fff;
+    color: #000;
+}
+
+.repo a:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .description {
+        position: absolute;
+        width: 91vw;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+        padding: 0.6rem 1.5rem;
+    }
+}

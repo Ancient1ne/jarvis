@@ -1,0 +1,59 @@
+{
+  "name": "Jarvis",
+  "description": "A WhatsApp bot based on Baileysjs with Multi-Device support",
+  "repository": "https://github.com/Sam10224/Jarvis",
+  "logo": "https://telegra.ph/file/351133422917a8bd7d776.jpg",
+  "keywords": [
+    "nodejs",
+    "bot",
+    "whatsapp bot",
+    "whatsapp automation",
+    "multi device"
+  ],
+  "env": {
+    "OWNER_NAME": {
+      "description": "Sam Jose"
+    },
+    "OWNER_NUMBER": {
+      "description": "254104909141"
+    },
+    "BOTNAME": {
+      "description": "J.A.R.V.I.S BOT"
+    },
+    "PREFIX": {
+      "description": "$"
+    },
+    "AUTHOR": {
+      "description": "Sam Jose"
+    },
+    "STICKER": {
+      "description": "Jarvis"
+    },
+    "id": {
+      "description": "891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4"
+    },
+    "PM_BLOCKER": {
+      "description": "true"
+    },
+    "WELCOME": {
+      "description": "false"
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      },
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      },
+      {
+        "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      }
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "eco"
+      }
+    }
+  }
+}
