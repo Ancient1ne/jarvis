@@ -35,5 +35,5 @@ function startWebInterface() {
 
 // Starting both child process and web interface
 start();
-//startWebInterface();
+startWebInterface();
 
