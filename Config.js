@@ -23,10 +23,10 @@ global.wm = "Sam botz inc."
 global.link = 'https://whatsapp.com/channel/0029Vab7qNp8kyyKijV1jM3B'
 
 //custom prefix
-global.prefa = process.env.PREFIX ||"$",
+global.prefa = process.env.PREFIX ||".",
 
 //false=disable and true=enable
-global.welcome = process.env.WELCOME || "false", //auto welcome
+global.welcome = true //auto welcome
 global.autoRecording = false //auto recording
 global.autoTyping = false //auto typing
 global.autorecordtype = false //auto typing + recording
@@ -34,7 +34,7 @@ global.autoread = false //auto read messages
 global.autobio = false //auto update bio
 global.anti234 = true //auto block +234
 global.autoread_status = true //auto view status/story
-global.goodbye = false //auto send out goodbye
+global.goodbye = true //auto send out goodbye
 
 
 

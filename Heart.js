@@ -4,40 +4,28 @@ const Config = require("./Config");
 const os = require("os");
 const fs = require("fs");
 const mathjs = require("mathjs");
-//const fsx = require('fs-extra')
 const path = require("path");
-const googleTTS = require("google-tts-api");
+const googleTTS = require("google-tts-api")
 const jsobfus = require("javascript-obfuscator");
 const dictionary = require("word-definition");
-//const wikipedia = require('wikipedia');
+const wikipedia = require('wikipedia');
 const npt = require("node-periodic-table");
 const pTable = require("ptable");
 const util = require("util");
-//const fsx = require("fs-extra");
+const fsx = require("fs-extra");
 const chalk = require("chalk");
 const mver = require("./package.json").version;
 const moment = require("moment-timezone");
 const speed = require("performance-now");
 const ms = (toMs = require("ms"));
-//const axios = require('axios')
+const axios = require('axios')
 const fetch = require("node-fetch");
 const { exec, spawn, execSync } = require("child_process");
 const { performance } = require("perf_hooks");
 const more = String.fromCharCode(8206);
 const readmore = more.repeat(4001);
-const {
-    TelegraPh,
-    UploadFileUgu,
-    webp2mp4File,
-    floNime,
-} = require("./Gallery/lib/uploader");
-const {
-    toAudio,
-    toPTT,
-    toVideo,
-    ffmpeg,
-    addExifAvatar,
-} = require("./Gallery/lib/converter");
+const { TelegraPh, UploadFileUgu, webp2mp4File, floNime } = require("./Gallery/lib/uploader");
+const { toAudio, toPTT, toVideo, ffmpeg, addExifAvatar } = require("./Gallery/lib/converter");
 const { smsg, getGroupAdmins, formatp, jam, formatDate, getTime, isUrl, await, sleep, clockString, msToDate, sort, toNumber, enumGetKey, runtime, fetchJson, getBuffer, json, format, logic, generateProfilePicture, parseMention, getRandom, pickRandom, reSize } = require('./Gallery/lib/myfunc')
 let afk = require("./Gallery/lib/afk");
 
@@ -46,9 +34,7 @@ const { fetchBuffer, buffergif } = require("./Gallery/lib/myfunc2");
 /////log
 global.modnumber = "254104909141";
 //Gallery/database
-let ntilinkall = JSON.parse(
-    fs.readFileSync("./Gallery/database/antilink.json")
-);
+let ntilinkall = JSON.parse(fs.readFileSync("./Gallery/database/antilink.json"));
 // Let autoblock = JSON.parse(fs.readFileSync('./Gallery/database/autoblock.json'));
 const isnsfw = JSON.parse(fs.readFileSync("./Gallery/database/nsfw.json"));
 
@@ -92,7 +78,7 @@ module.exports = Jarvis = async (Jarvis, m, msg, chatUpdate, store) => {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectreply.selectedRowId : (m.mtype == 'templateButtonreplyMessage') ? m.message.templateButtonreplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectreply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
 
-        const prefix = global.prefa || "$"
+        const prefix = global.prefa || "."
         const isCmd = body.startsWith(prefix);
         if (!isCmd || !body.startsWith(prefix)) return;
         const command = body
@@ -2589,8 +2575,6 @@ ${readmore}
 
                 break;
 
-
-
             case "circlevideo":
                 {
                     try {
@@ -2614,7 +2598,7 @@ ${readmore}
                 if (!text) return reply('Where is the text?')
                 let texttts = text
                 const xeonrl = googleTTS.getAudioUrl(texttts, {
-                    lang: "en",
+                    lang: "en-US",
                     slow: false,
                     host: "https://translate.google.com",
                 })
@@ -2629,7 +2613,8 @@ ${readmore}
                     quoted: m,
                 })
             }
-                break
+                break;
+
             case 'obfus': case 'obfuscate': {
                 if (!q) return reply(`Example ${prefix + command} const Jarvis = require('baileys')`)
                 let meg = await obfus(q)

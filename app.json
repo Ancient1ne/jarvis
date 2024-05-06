@@ -21,7 +21,7 @@
       "description": "J.A.R.V.I.S BOT"
     },
     "PREFIX": {
-      "description": "$"
+      "description": "."
     },
     "AUTHOR": {
       "description": "Sam Jose"

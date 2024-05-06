@@ -159,8 +159,6 @@ async function startJarvis() {
 
             printRainbowMessage();
         }
-
-
         if (
             connection === "close" &&
             lastDisconnect &&
@@ -295,7 +293,8 @@ async function startJarvis() {
                         const xtime = moment.tz('Africa/Addis_Ababa').format('HH:mm:ss')
                         const xdate = moment.tz('Africa/Addis_Ababa').format('DD/MM/YYYY')
                         const xmembers = metadata.participants.length
-                        Jarvisbody = `╔══ 🎗𝑾𝑬𝑳𝑪𝑶𝑴𝑬🎗══╗
+                        Jarvisbody = `
+╔══ 🎗𝑾𝑬𝑳𝑪𝑶𝑴𝑬🎗══╗
 ⬡│▸  🌐 To: ${metadata.subject}
 ⬡│▸  📋 Name: @${JarvisName.split("@")[0]}
 ⬡│▸  👥 Members: ${xmembers}th
@@ -324,7 +323,8 @@ async function startJarvis() {
                         const Jarvisdate = moment.tz('Africa/Addis_Ababa').format('DD/MM/YYYY')
                         let JarvisName = num
                         const Jarvismembers = metadata.participants.length
-                        Jarvisbody = `╔══🕸𝑭𝑨𝑹𝑬𝑾𝑬𝑳𝑳🕸══╗
+                        Jarvisbody = `
+╔══🕸𝑭𝑨𝑹𝑬𝑾𝑬𝑳𝑳🕸══╗
 ⬡│▸  👤 From: ${metadata.subject}
 ⬡│▸  📃 Reason: Left
 ⬡│▸  📔 Name: @${JarvisName.split("@")[0]}
