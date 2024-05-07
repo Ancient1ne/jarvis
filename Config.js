@@ -3,8 +3,8 @@ const chalk = require('chalk')
 require('dotenv').config();
 
 //contact details
-global.ownernumber = [ process.env.OWNER_NUMBER || "254104909141"],
-global.ownername = process.env.OWNER_NAME || "Sam Jose",
+global.ownernumber = [ process.env.OWNER_NUMBER || "254706702033"],
+global.ownername = process.env.OWNER_NAME || "☟☜  𝔸𝕦𝕤𝕥𝕚𝕟  ♙🐼",
 global.ytname = "YT: SamBotz.inc"
 global.socialm = "GitHub: Sam10224"
 global.location = "KENYAN"
@@ -14,7 +14,7 @@ global.botname = process.env.BOTNAME || 'J.A.R.V.I.S', //name of the bot
 //sticker details
 global.stickername = process.env.STICKER || 'J.A.R.V.I.S',
 global.packname = 'Sticker By'
-global.author = process.env.AUTHOR || 'Sam Jose',
+global.author = process.env.AUTHOR || '☟☜  𝔸𝕦𝕤𝕥𝕚𝕟  ♙🐼',
 //console view/theme
 global.themeemoji = '😎'
 global.wm = "Sam botz inc."
