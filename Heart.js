@@ -2295,7 +2295,7 @@ module.exports = Jarvis = async (Jarvis, m, msg, chatUpdate, store) => {
             case "help":
             case "h":
                 await loading();
-                const txt = `╭════〘 SAM JOSE 〙═⊷⏣
+                const txt = `╭════〘 ☟☜  𝔸𝕦𝕤𝕥𝕚𝕟  ♙🐼 〙═⊷⏣
 ┃⭓╭──────────────┉◕  
 ┃⭓│ USER : ${pushname} 
 ┃⭓│ BOT :  ${botname}
